@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tienda de Computadoras y Tecnología</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  </head>
+<body>
+  <header>
+     <div class="main-header__container">
+           <h1 class="main-header__title">MY SHOP</h1>
+    </div>    
+    <div class="search">
+      <input type="search" placeholder="Buscar en toda la tienda..." />
+       <button><i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div class="main-header__container">
+                   
+            <a href="" class="main-header__btn">Mi carrito <i class="fa-solid fa-cart-shopping"></i></a>
+              </div> 
+  </header>
+<div class="nav-container">
+  <nav class="main-nav">
+    <a href="gamer.html"><p><i class="bi bi-controller"></i> Gamer</p></a>
+    <a href="computo.html"><p><i class="bi bi-pc-display"></i> Computo</p></a>
+    <a href="hardware.html"><p><i class="bi bi-cpu"></i> Hardware</p></a>
+     <a href="redes.html"><p><i class="bi bi-modem"></i> Redes</p></a>
+    <a href="electronica.html"><p><i class="bi bi-webcam-fill"></i> Electronica</p></a>
+    <a href="movil.html"><p><i class="bi bi-phone-fill"></i> Movil</p></a>
+    <a href="homeoffice.html"><p><i class="bi bi-laptop-fill"></i> Home Office</p></a>
+    <a href="smarthome.html"><p><i class="bi bi-earbuds"></i> Smart Home</p></a>
+  
+  </nav>
+</div>
+  <main>
+    <div class="container-slider">
+    <div class="slider" id="slider">
+      <div class="slider__section">
+      <img src="images/img1.jpg" all="" class=slider__img>
+      </div>
+      <div class="slider__section">
+      <img src="images/img2.jpeg" all="" class=slider__img>
+      </div>
+      <div class="slider__section">
+      <img src="images/img3.jpeg" all="" class=slider__img>
+      </div>      
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+       <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    <script src="slider.js"></script> 
+    
+    <div class="container-prod">
+     <section class="products-section" id="products" aria-label="Productos destacados">
+    <h2>Productos Destacados</h2>
+    <div class="products-grid">
+      <article class="product-card" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Laptop moderna" />
+        <h3 class="product-name">Laptop Gamer XYZ</h3>
+        <div class="product-price">$799 USD</div>
+        <button class="btn-buy" aria-label="Comprar Laptop Gamer XYZ">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazuT4TcyVq1N5hjM5uLLXr14hh-D2ScaZVA&s" alt="Ratón para gaming" />
+        <h3 class="product-name">Mouse Gamer RGB</h3>
+        <div class="product-price">$50 USD</div>
+        <button class="btn-buy" aria-label="Comprar Mouse Gamer RGB">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://fullh4rd.com.ar/img/productos/8/teclado-gamer-redragon-k669-ziggs-rgb-espaol-1.jpg" alt="Teclado mecánico" />
+        <h3 class="product-name">Teclado Mecánico Retroiluminado</h3>
+        <div class="product-price">$64.99 USD</div>
+        <button class="btn-buy" aria-label="Comprar Teclado Mecánico Retroiluminado">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://techfamily.pe/cdn/shop/files/gsc_127259649_4853112_1.jpg?v=1716396772" alt="Audífonos inalámbricos" />
+        <h3 class="product-name">Audífonos Inalámbricos</h3>
+        <div class="product-price">$49.99 USD</div>
+        <button class="btn-buy" aria-label="Comprar Audífonos Inalámbricos">Comprar</button>
+      </article>
+    </div>
+       
+  </section>
+      </div>
+    
+    <section class="registration" id="register" aria-label="Registro de clientes">
+    <h2>Registro de Clientes</h2>
+    <form id="clientForm" novalidate>
+      <label for="name">Nombre completo</label>
+      <input type="text" id="name" name="name" placeholder="Guillermo Pérez" required minlength="3" aria-required="true" />
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder= "guille@gmail.com" required aria-required="true" />
+
+      <label for="phone">Teléfono</label>
+      <input type="tel" id="phone" name="phone" placeholder="(503) 7746-3144" pattern="^\(?\d{2,4}\)?[-.\s]?\d{3,4}[-.\s]?\d{4}$" aria-describedby="phoneHelp" />
+
+      <small id="phoneHelp" style="color:#6c757d; margin-top:-0.8rem; margin-bottom:1rem; font-size:0.85rem;">Formato: 10 a 12 dígitos, opcional</small>
+
+      <label for="interest">Interés en productos</label>
+      <select id="interest" name="interest" required aria-required="true">
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="computadoras">Computadoras</option>
+        <option value="accesorios">Accesorios</option>
+        <option value="componentes">Componentes</option>
+        <option value="gadgets">Gadgets</option>
+      </select>
+
+      <button type="submit">Registrarse</button>
+      <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Steren El Salvador - Todos los derechos reservados
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
