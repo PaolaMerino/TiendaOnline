@@ -7,120 +7,784 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
   </head>
 <body>
   <header>
-     <div class="main-header__container">
-           <h1 class="main-header__title">MY SHOP</h1>
+    <div class="main-header__container">
+        <img src="images/Logo.png" alt="Logo de My Shop" class="logo">
     </div>    
     <div class="search">
       <input type="search" placeholder="Buscar en toda la tienda..." />
-       <button><i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     <div class="main-header__container">
-                   
-            <a href="" class="main-header__btn">Mi carrito <i class="fa-solid fa-cart-shopping"></i></a>
-              </div> 
+      <a href="#" class="main-header__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div> 
   </header>
-<div class="nav-container">
-  <nav class="main-nav">
-    <a href="gamer.html"><p><i class="bi bi-controller"></i> Gamer</p></a>
-    <a href="computo.html"><p><i class="bi bi-pc-display"></i> Computo</p></a>
-    <a href="hardware.html"><p><i class="bi bi-cpu"></i> Hardware</p></a>
-     <a href="redes.html"><p><i class="bi bi-modem"></i> Redes</p></a>
-    <a href="electronica.html"><p><i class="bi bi-webcam-fill"></i> Electronica</p></a>
-    <a href="movil.html"><p><i class="bi bi-phone-fill"></i> Movil</p></a>
-    <a href="homeoffice.html"><p><i class="bi bi-laptop-fill"></i> Home Office</p></a>
-    <a href="smarthome.html"><p><i class="bi bi-earbuds"></i> Smart Home</p></a>
   
-  </nav>
-</div>
+  <div class="nav-container">
+    <nav class="main-nav">
+      <a class="nav-link active" data-target="home"><p><i class="bi bi-controller"></i> HOME</p></a>
+      <a class="nav-link" data-target="categories"><p><i class="bi bi-pc-display"></i> CATEGORIAS</p></a>
+      <a href="#"><p><i class="bi bi-cpu"></i>CLIENTES</p></a>
+      <a href="#"><p><i class="bi bi-modem"></i> CONTACTOS</p></a>
+    </nav>
+  </div>
+  
   <main>
-    <div class="container-slider">
-    <div class="slider" id="slider">
-      <div class="slider__section">
-      <img src="images/img1.jpg" all="" class=slider__img>
+    <!-- Sección Home (principal) -->
+    <section id="home">
+      <div class="container-slider">
+        <div class="slider" id="slider">
+          <div class="slider__section">
+            <img src="images/img1.jpg" alt="Computadora gaming" class="slider__img">
+          </div>
+          <div class="slider__section">
+            <img src="images/img1.jpg" alt="Componentes de computadora" class="slider__img">
+          </div>
+          <div class="slider__section">
+            <img src="images/img3.jpeg" alt="Laptop moderna" class="slider__img">
+          </div>      
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
       </div>
-      <div class="slider__section">
-      <img src="images/img2.jpeg" all="" class=slider__img>
+      
+      <div class="container-prod">
+        <section class="products-section" id="products" aria-label="Productos destacados">
+          <h2>Productos Destacados</h2>
+          <div class="products-grid">
+            <article class="product-card" tabindex="0">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Laptop moderna" />
+              <h3 class="product-name">Laptop Gamer XYZ</h3>
+              <div class="product-price">$799 USD</div>
+              <button class="btn-buy" aria-label="Comprar Laptop Gamer XYZ">Comprar</button>
+            </article>
+            <article class="product-card" tabindex="0">
+              <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80" alt="Ratón para gaming" />
+              <h3 class="product-name">Mouse Gamer RGB</h3>
+              <div class="product-price">$50 USD</div>
+              <button class="btn-buy" aria-label="Comprar Mouse Gamer RGB">Comprar</button>
+            </article>
+            <article class="product-card" tabindex="0">
+              <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=400&q=80" alt="Teclado mecánico" />
+              <h3 class="product-name">Teclado Mecánico Retroiluminado</h3>
+              <div class="product-price">$64.99 USD</div>
+              <button class="btn-buy" aria-label="Comprar Teclado Mecánico Retroiluminado">Comprar</button>
+            </article>
+            <article class="product-card" tabindex="0">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Audífonos inalámbricos" />
+              <h3 class="product-name">Audífonos Inalámbricos</h3>
+              <div class="product-price">$49.99 USD</div>
+              <button class="btn-buy" aria-label="Comprar Audífonos Inalámbricos">Comprar</button>
+            </article>
+          </div>
+        </section>
       </div>
-      <div class="slider__section">
-      <img src="images/img3.jpeg" all="" class=slider__img>
-      </div>      
-      </div>
-      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-       <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-    </div>
-    <script src="slider.js"></script> 
+      
+      <section class="registration" id="register" aria-label="Registro de clientes">
+        <h2>Registro de Clientes</h2>
+        <form id="clientForm" novalidate>
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" name="name" placeholder="Guillermo Pérez" required minlength="3" aria-required="true" />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder= "guille@gmail.com" required aria-required="true" />
+
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="(503) 7746-3144" pattern="^\(?\d{2,4}\)?[-.\s]?\d{3,4}[-.\s]?\d{4}$" aria-describedby="phoneHelp" />
+
+          <small id="phoneHelp" style="color:#6c757d; margin-top:-0.8rem; margin-bottom:1rem; font-size:0.85rem;">Formato: 10 a 12 dígitos, opcional</small>
+
+          <label for="interest">Interés en productos</label>
+          <select id="interest" name="interest" required aria-required="true">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="computadoras">Computadoras</option>
+            <option value="accesorios">Accesorios</option>
+            <option value="componentes">Componentes</option>
+            <option value="gadgets">Gadgets</option>
+          </select>
+
+          <button type="submit">Registrarse</button>
+          <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+        </form>
+      </section>
+    </section>
     
-    <div class="container-prod">
-     <section class="products-section" id="products" aria-label="Productos destacados">
-    <h2>Productos Destacados</h2>
+    <!-- Sección de categorías -->
+    <section id="categories" class="hidden">
+      <h2 class="section-title">Nuestras Categorías</h2>
+      <div class="categories">        
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Computadoras">
+          <nav class="main-nav"> 
+          <img src="https://img.icons8.com/?size=100&id=GlDV5Eot4B7h&format=png&color=000000" alt="Icono de computadora" />           
+          <a class="nav-link active" data-target="gamer"><h3>Gamer</h3></a>
+          </nav>
+        </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Computo">
+          <nav class="main-nav"> 
+          <img src="https://img.icons8.com/?size=100&id=10326&format=png&color=000000" alt="Icono de computo" />
+          <a class="nav-link active" data-target="computo"><h3>Computo</h3></a>
+          </nav>  
+        </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Hardware">
+        <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=bgyqy0pqIzvq&format=png&color=000000" alt="Icono de hardware" />
+          <a class="nav-link active" data-target="hardware"><h3>Hardware</h3></a>
+        </nav>
+        </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Redes">
+        <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=39352&format=png&color=000000" alt="Icono de Redes" />
+         <a class="nav-link active" data-target="redes"><h3>Redes</h3></a>
+        </nav>
+          </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Electrínica">
+          <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=10325&format=png&color=000000" alt="Icono de eletrónica" />
+          <a class="nav-link active" data-target="electronica"><h3>Electrónica</h3></a>
+          </nav>  
+        </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Movil">
+          <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=11474&format=png&color=000000" alt="Icono de Movil" />
+          <a class="nav-link active" data-target="movil"><h3>Móvil</h3></a>
+          </nav>  
+        </div>        
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Homeoffice">
+          <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=80268&format=png&color=000000" alt="Icono de Homeoffice" />
+          <a class="nav-link active" data-target="homeoffice"><h3>Home Office</h3></a>
+          </nav>
+        </div>
+        <div tabindex="0" class="category-card" role="button" aria-pressed="false" aria-label="Smarthome">
+          <nav class="main-nav">
+          <img src="https://img.icons8.com/?size=100&id=JzHJv10US60C&format=png&color=000000" alt="Icono de Smarthome" />
+           <a class="nav-link active" data-target="smarthome"><h3>Smart Home</h3></a>
+          </nav>
+        </div>
+      </div>
+    </section>    
+     <section id="gamer" class="hidden">
+         <h2 class="section-title">GAMER</h2>
+          <div class="products-grid"> 
+      <article class="product-card" tabindex="0">
+        <img src="https://assets2.razerzone.com/images/pnx.assets/633cf4bb9ab04ad74a519053ec300085/razer-huntsman-v3-pro-hero-mobile-v2.webp" alt="Razer Huntsman V3 Pro" />
+        <h3 class="product-name">Razer Huntsman V3 Pro</h3>
+        <p class="product-description">Teclado óptico analógico para esports</p>
+        <div class="product-price">$125 USD</div>
+        <button class="btn-buy" aria-label="Comprar Razer Huntsman V3 Pro">Comprar</button>
+      </article>
+  <article class="product-card" tabindex="0">
+        <img src="https://assets2.razerzone.com/images/pnx.assets/f1594f8db5cb6eb47e655a41d26b94f0/razer-huntsman-v3-pro-tkl-white-hero-mobile.webp" alt="Razer Huntsman V3 Pro Tenkeyless" />
+        <h3 class="product-name">Razer Huntsman V3 Pro Tenkeyless</h3>
+        <p class="product-description">Teclado óptico analógico para esports sin teclado numérico</p>
+        <div class="product-price">$99 USD</div>
+        <button class="btn-buy" aria-label="Razer Huntsman V3 Pro Tenkeyless">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://assets2.razerzone.com/images/pnx.assets/03377615fb89a4d8959e2a39c3ce1fda/razer-huntsman-v3-pro-mini-hero-mobile-white.webp" alt="Razer Huntsman V3 Pro Mini" />
+        <h3 class="product-name">Razer Huntsman V3 Pro Mini</h3>
+        <p class="product-description">Teclado óptico analógico para esports 60 %</p>
+        <div class="product-price">$60 USD</div>
+        <button class="btn-buy" aria-label=" Comprar Razer Huntsman V3 Pro Mini">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://assets2.razerzone.com/images/pnx.assets/1f425ce3b444ffd1d94d7442f6289f4d/razer-huntsman-v3-tkl-500x500.webp" alt="Razer Huntsman V3 X Tenkeyless" />
+        <h3 class="product-name">Laptop Gamer XYZ</h3>
+        <p class="product-description">Teclado óptico para esports</p>
+        <div class="product-price">$115 USD</div>
+        <button class="btn-buy" aria-label="Comprar Razer Huntsman V3 X Tenkeyless">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://assets2.razerzone.com/images/pnx.assets/5330432bc718cd8deb4f652df8f2fbd3/razer-huntsman-mini-500x500.webp" alt="Razer Huntsman Mini" />
+        <h3 class="product-name">Razer Huntsman Mini</h3>
+        <p class="product-description">Teclado para juegos de tamaño 60 % con switch óptico Razer™</p>
+        <div class="product-price">$75 USD</div>
+        <button class="btn-buy" aria-label="Comprar Razer Huntsman Mini">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/G309-Lightspeed-Gaming-Mouse/gallery/g309-lightspeed-wireless-mouse-white-gallery-1.png?v=1" alt="G309 LIGHTSPEED" />
+        <h3 class="product-name">G309 LIGHTSPEED</h3>
+        <p class="product-description">Ratón inalámbrico para juegos con interruptores LIGHTFORCE</p>
+        <div class="product-price">$95 USD</div>
+        <button class="btn-buy" aria-label="Comprar G309 LIGHTSPEED">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight-2/new-gallery-assets-2025/pro-x-superlight-2-mice-top-angle-black-gallery-1.png?v=1" alt="PRO X SUPERLIGHT 2" />
+        <h3 class="product-name">PRO X SUPERLIGHT 2</h3>
+        <p class="product-description">Mouse inalámbrico LIGHTSPEED para juegos</p>
+        <div class="product-price">$99 USD</div>
+        <button class="btn-buy" aria-label="Comprar PRO X SUPERLIGHT 2">Comprar</button>
+      </article>
+
+
+  <article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-1-black.png?v=1" alt="G502 X PLUS" />
+        <h3 class="product-name">G502 X PLUS</h3>
+        <p class="product-description">Ratón inalámbrico para juegos LIGHTSPEED con LIGHTSYNC RGB</p>
+        <div class="product-price">$150 USD</div>
+        <button class="btn-buy" aria-label="Comprar G502 X PLUS">Comprar</button>
+      </article>
+
+
+
+  <article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/mouse/g705-wireless-mouse/gallery/g705-gallery-3.png?v=1" alt="G705" />
+        <h3 class="product-name">G705</h3>
+        <p class="product-description">Teclado retroiluminado con switches mecánicos para máxima precisión y rapidez.</p>
+        <div class="product-price">$45 USD</div>
+        <button class="btn-buy" aria-label="Comprar G705">Comprar</button>
+      </article>
+
+  <article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/g502x-lightspeed/gallery/g502x-lightspeed-gallery-1-white.png?v=1" alt="MOUSE INALÁMBRICO G502 X LIGHTSPEED PARA JUEGOS" />
+        <h3 class="product-name">MOUSE INALÁMBRICO G502 X LIGHTSPEED PARA JUEGOS</h3>
+        <p class="product-description">G502 X LIGHTSPEED es la última adición a la legendaria gama G502. </p>
+        <div class="product-price">$199 USD</div>
+        <button class="btn-buy" aria-label="Comprar MOUSE INALÁMBRICO G502 X LIGHTSPEED PARA JUEGOS">Comprar</button>
+      </article>             
+         </div>
+       </section> 
+    
+    
+    <section id="computo" class="hidden">
+         <h2 class="section-title">COMPUTO</h2>
+          <div class="products-grid"> 
+            
+          <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada684853cbd1263.jpg" alt="samsung s27d702ean 4k" />
+        <h3 class="product-name">samsung s27d702ean 4k</h3>
+        <p class="product-description">Monitor samsung s27d702ean 4k uhd ips 27p 60hz hdmi hdr10</p>
+        <div class="product-price">$399 USD</div>
+        <button class="btn-buy" aria-label="Comprar Samsung s27d702ean 4k">Comprar</button>
+      </article>
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada684061328b4b4.jpg" alt="Arzopa s1" />
+        <h3 class="product-name">Arzopa s1</h3>
+        <p class="product-description">Monitor portatil arzopa s1 con estuche pantalla ips fhd 15.6p usb tipo c mini hdmi ultra slim</p>
+        <div class="product-price">$119.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Arzopa s1">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada683fa163ee9a0.jpg" alt="Arzopa z1fc" />
+        <h3 class="product-name">Arzopa z1fc</h3>
+        <p class="product-description">Monitor portatil arzopa z1fc pantalla ips fhd 16.1p 144hz usb tipo c mini hdmi ultra slim</p>
+        <div class="product-price">$159.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Arzopa z1fc">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/mouse/g705-wireless-mouse/gallery/g705-gallery-3.png?v=1" alt="G705" />
+        <h3 class="product-name">G705</h3>
+        <p class="product-description">Teclado retroiluminado con switches mecánicos para máxima precisión y rapidez.</p>
+        <div class="product-price">$45 USD</div>
+        <button class="btn-buy" aria-label="Comprar G705">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada64750fdc550a7.jpg" alt="Licencia de microsoft windows 11 home" />
+        <h3 class="product-name">Licencia de microsoft windows 11 home</h3>
+        <p class="product-description">Licencia de microsoft windows 11 home v21h2 dsp oei dvd kw9-00656</p>
+        <div class="product-price">$159.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Licencia de microsoft windows 11 home">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada676ed0cd8287c.jpg" alt="Licencia de microsoft office hogar 1"/>
+        <h3 class="product-name">Licencia de microsoft office hogar 1 </h3>
+        <p class="product-description">Licencia de microsoft office hogar 1 pc mac 2024 (word excel power point one note) x23-72184-01</p>
+        <div class="product-price">$119.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Licencia de microsoft office hogar 1 ">Comprar</button>
+      </article>
+
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6807d69c35a30.jpg" alt="Ups forza interactivo nt-2401pro" />
+        <h3 class="product-name">Ups forza interactivo nt-2401pro</h3>
+        <p class="product-description">Ups forza interactivo nt-2401pro 2400va 1200w 10 salidas nema 5-15r</p>
+        <div class="product-price">$199.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Ups forza interactivo nt-2401pro">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada66a3f452be52f.jpg" alt="Ups hikvision ds-ups3000-x" />
+        <h3 class="product-name">Ups hikvision ds-ups3000-x</h3>
+        <p class="product-description">Ups hikvision ds-ups3000-x 3000va 1800w 6 salidas nema</p>
+        <div class="product-price">$249 USD</div>
+        <button class="btn-buy" aria-label="Comprar Ups hikvision ds-ups3000-x">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada64e4d80671b6b.jpg" alt="Ups apc bv800" />
+        <h3 class="product-name">Ups apc bv800</h3>
+        <p class="product-description">Ups apc bv800 800va 450w 6salidas 120v</p>
+        <div class="product-price">$99 USD</div>
+        <button class="btn-buy" aria-label="Comprar Ups apc bv800">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6814fc0427d71.jpg" alt="Maletin para laptop hp" />
+        <h3 class="product-name">Maletin para laptop hp</h3>
+        <p class="product-description">Maletin para laptop hp prelude topload hasta 15.6 2z8p4aa gris</p>
+        <div class="product-price">$19.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Maletin para laptop hp">Comprar</button>
+      </article>
+
+
+<article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6744a7f49f097.jpg" alt="Hub multipuertos genius uh-545" />
+        <h3 class="product-name">Hub multipuertos genius uh-545</h3>
+        <p class="product-description">Hub multipuertos genius uh-545 usb tipo c rrj45 y 3 usb 3.0 con usb-c</p>
+        <div class="product-price">$19.95 USD</div>
+        <button class="btn-buy" aria-label="Comprar Hub multipuertos genius uh-545">Comprar</button>
+      </article>
+         </div>
+       </section> 
+     <section id="hardware" class="hidden">
+        <h2 class="section-title">HARDWARE</h2>
+          <div class="products-grid">
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Procesador Intel Core i9">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f6e5a6a9-d80a-4640-a494-bb11e7ce6e5a.png" alt="Procesador Intel Core i9, componente hardware para computadora" />
+        <h3 class="product-name">Procesador Intel Core i9</h3>
+        <p class="product-description">CPU potente para estaciones de trabajo y gaming con alto rendimiento.</p>
+        <div class="product-price">USD $499</div>
+        <button class="btn-buy" aria-label="Comprar Procesador Intel Core i9">Comprar</button>
+                
+      </article>
+            <article class="product-card" tabindex="0" role="listitem" aria-label="Tarjeta gráfica NVIDIA RTX 3080">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d2c68abe-8732-45d3-95c5-f71884de80d8.png" alt="Tarjeta gráfica NVIDIA RTX 3080 para videojuegos y edición" />
+        <h3 class="product-name">Tarjeta gráfica NVIDIA RTX 3080</h3>
+        <p class="product-description">Gráficos de última generación para juegos en 4K y renderizado acelerado.</p>
+        <div class="product-price">USD $699</div>
+        <button class="btn-buy" aria-label="Comprar Tarjeta gráfica NVIDIA RTX 3080">Comprar</button>             
+      </article>
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Memoria RAM DDR4 16GB">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6fde2746-8767-4f11-8916-dca68057b68d.png" alt="Memoria RAM DDR4 16GB para computadora de alto rendimiento" />
+        <h3 class="product-name">Memoria RAM DDR4 16GB</h3>
+        <p class="product-description">Memoria rápida para multitarea y carga acelerada de aplicaciones.</p>
+        <div class="product-price">USD $89</div>
+        <button class="btn-buy" aria-label="Comprar Memoria RAM DDR4 16GB">Comprar</button>        
+      </article>
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Disco SSD NVMe 1TB">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae2b7794-1c23-4b0a-929f-8a6c9ce367f7.png" alt="Disco SSD NVMe de 1TB para almacenamiento rápido" />
+        <h3 class="product-name">Disco SSD NVMe 1TB</h3>
+        <p class="product-description">Almacenamiento ultrarrápido para reducir los tiempos de carga y transferencia.</p>
+        <div class="product-price">USD $129</div>
+       <button class="btn-buy" aria-label="Comprar Disco SSD NVMe 1TB">Comprar</button>         
+      </article>            
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Placa madre ASUS ROG Strix">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c69fcb8-f099-4c06-a603-d63c4c363165.png" alt="Placa madre ASUS ROG Strix para procesadores Intel y AMD" />
+        <h3 class="product-name">Placa madre ASUS ROG Strix</h3>
+        <p class="product-description">Soporte para múltiples componentes con altas capacidades de overclock.</p>
+        <div class="product-price">USD $249</div>
+        <button class="btn-buy" aria-label="Comprar Placa madre ASUS ROG Strix">Comprar</button>
+      </article>   
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Fuente de poder Corsair 750W">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbfcebd3-99ed-4a2f-a4f9-30822ec4c755.png" alt="Fuente de poder Corsair de 750W para suministro estable de energía" />
+        <h3 class="product-name">Fuente de poder Corsair 750W</h3>
+        <p class="product-description">Suministro energético eficiente y estable para sistemas potentes.</p>
+        <div class="product-price">USD $109</div>
+         <button class="btn-buy" aria-label="Comprar Fuente de poder Corsair 750W">Comprar</button>
+      </article> 
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Sistema de enfriamiento líquido NZXT Kraken">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbf4790f-cdf8-4ee4-a396-63583a72e672.png" alt="Sistema de enfriamiento líquido NZXT Kraken para procesadores" />
+        <h3 class="product-name">Enfriamiento líquido NZXT Kraken</h3>
+        <p class="product-description">Refrigeración avanzada para mantener temperaturas óptimas en cargas intensas.</p>
+        <div class="product-price">USD $159</div>
+        <button class="btn-buy" aria-label="Comprar Sistema de enfriamiento líquido NZXT Kraken">Comprar</button>
+      </article>
+       <article class="product-card" tabindex="0" role="listitem" aria-label="Tarjeta de sonido Creative Sound Blaster">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f8d0ab84-660c-485d-9476-15e8d038bf9b.png" alt="Tarjeta de sonido Creative Sound Blaster para audio profesional" />
+        <h3 class="product-name">Tarjeta de sonido Creative Sound Blaster</h3>
+        <p class="product-description">Audio de alta fidelidad para gaming y producción musical en PC.</p>
+        <div class="product-price">USD $89</div>
+        <button class="btn-buy" aria-label="Comprar Tarjeta de sonido Creative Sound Blaster">Comprar</button>
+      </article>  
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Monitor LED 27 pulgadas 144Hz">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4358d1fc-38b0-403a-98cb-d4f6d4dafafe.png" alt="Monitor LED de 27 pulgadas con tasa de refresco de 144Hz" />
+        <h3 class="product-name">Monitor LED 27" 144Hz</h3>
+        <p class="product-description">Pantalla con alta tasa de refresco para juegos y multimedia fluida.</p>
+        <div class="product-price">USD $329</div>
+        <button class="btn-buy" aria-label="Comprar Monitor LED 27 pulgadas 144Hz">Comprar</button>
+      </article>  
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Teclado mecánico RGB">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/363c7eb6-0fc1-49d3-b9fe-7636f96418b8.png" alt="Teclado mecánico con retroiluminación RGB para gamers y programadores" />
+        <h3 class="product-name">Teclado mecánico RGB</h3>
+        <p class="product-description">Switches mecánicos para una experiencia táctil superior y personalización de luz.</p>
+        <div class="product-price">USD $99</div>
+        <button class="btn-buy" aria-label="Comprar Teclado mecánico RGB">Comprar</button>
+      </article> 
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Ratón gaming inalámbrico Logitech">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1af4e12-60b3-43e3-a9b9-62a039554217.png" alt="Ratón gaming inalámbrico Logitech con alta precisión" />
+        <h3 class="product-name">Ratón gaming inalámbrico Logitech</h3>
+        <p class="product-description">Alta precisión y ergonomía para sesiones largas de juego o trabajo.</p>
+        <div class="product-price">USD $79</div>
+        <button class="btn-buy" aria-label="Comprar Ratón gaming inalámbrico Logitech">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0" role="listitem" aria-label="Disco duro externo 2TB">
+        <img class="product-image" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f6f0b9a3-7413-40b6-bed5-23f4f6c0abcd.png" alt="Disco duro externo con capacidad de 2TB para almacenamiento adicional" />
+        <h3 class="product-name">Disco duro externo 2TB</h3>
+        <p class="product-description">Solución de almacenamiento portable con USB 3.0 para backup y archivos.</p>
+        <div class="product-price">USD $89</div>
+        <button class="btn-buy" aria-label="Comprar Disco duro externo 2TB">Comprar</button>
+      </article> 
+      </div>
+     </section>
+                
+     <section id="redes" class="hidden">
+        <h2 class="section-title">REDES</h2>
+    <div class="products-grid">
+      <article class="product-card" tabindex="0" aria-label="Router inalámbrico de alta velocidad">
+      <img  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d3dd9ac-0c89-42f2-abaf-c18b89beffb2.png"
+        alt="Router inalámbrico moderno y elegante en color negro"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">router</span> Router Inalámbrico</h3>
+        <p class="product-description">Router WiFi doble banda con tecnología AC para conexiones estables y rápidas en toda la casa.</p>
+        <button class="btn-buy" aria-label="Comprar Router Inalámbrico">Comprar</button>
+      </div>
+    </article>
+    
+    <article class="product-card" tabindex="0" aria-label="Switch gestionable de 24 puertos Gigabit">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00d771cf-4f68-458d-bcaa-b3c3bfa5f193.png"
+        alt="Switch gestionable profesional de 24 puertos Gigabit"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">settings_input_hdmi</span> Switch Gestionable</h3>
+        <p class="product-description">Switch de red empresarial con 24 puertos Gigabit, gestión VLAN y QoS para tráfico optimizado.</p>
+        <button class="btn-buy" aria-label="Comprar Switch Gestionable">Comprar</button>
+      </div>
+    </article>
+    <article class="product-card" tabindex="0" aria-label="Cámara IP para vigilancia 1080p">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/59846335-7f60-4cf2-b89e-3dcc44e70523.png"
+        alt="Cámara IP moderna para vigilancia con resolución HD 1080p"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">videocam</span> Cámara IP 1080p</h3>
+        <p class="product-description">Cámara de seguridad IP con visión nocturna y acceso remoto desde cualquier dispositivo.</p>
+        <button class="btn-buy" aria-label="Comprar Cámara IP 1080p">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Cable Ethernet Cat 6 de 10 metros">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bd1cfbfa-2cd3-46a7-87da-92b588017232.png"
+        alt="Cable Ethernet Cat 6 azul de 10 metros"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">cable</span> Cable Ethernet Cat 6</h3>
+        <p class="product-description">Cable UTP Cat 6 para conexiones de red rápida con soporte para hasta 10 Gbps.</p>
+        <button class="btn-buy" aria-label="Comprar Cable Ethernet Cat 6">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Antena WiFi de largo alcance">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cf7ac98e-3aa5-4b00-b0b9-e37aa0e95806.png"
+        alt="Antena WiFi externa para mayor cobertura"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">signal_wifi_4_bar</span> Antena WiFi</h3>
+        <p class="product-description">Antena externa con alta ganancia para ampliar la cobertura y estabilidad de la red inalámbrica.</p>
+        <button class="btn-buy" aria-label="Comprar Antena WiFi">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Firewall de red para empresas">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf801008-2cc6-4718-bc5c-61ca18919a6e.png"
+        alt="Dispositivo firewall para proteger redes empresariales"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">security</span> Firewall Empresarial</h3>
+        <p class="product-description">Protección avanzada para su red con filtrado de tráfico y prevención de intrusiones en tiempo real.</p>
+        <button class="btn-buy" aria-label="Comprar Firewall Empresarial">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Módem 4G LTE para conexión remota">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf36ee9e-d833-48b9-8cc3-923fffa704ad.png"
+        alt="Módem 4G LTE portátil para conexión de internet rápida"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">router</span> Módem 4G LTE</h3>
+        <p class="product-description">Dispositivo para conexión a internet móvil con alta velocidad y estabilidad para ubicaciones remotas.</p>
+        <button class="btn-buy" aria-label="Comprar Módem 4G LTE">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Punto de acceso WiFi empresarial">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41814fbb-f1c6-4d11-9a8f-5b627d1d4374.png"
+        alt="Punto de acceso WiFi profesional para redes empresariales"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">wifi_tethering</span> Punto de Acceso WiFi</h3>
+        <p class="product-description">Acceso inalámbrico de alta capacidad para oficinas y espacios grandes con múltiples usuarios simultáneos.</p>
+        <button class="btn-buy" aria-label="Comprar Punto de Acceso WiFi">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Cable de fibra óptica multimodo">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11cfbcc0-d334-4f65-af5e-63909613cdec.png"
+        alt="Cable de fibra óptica multimodo para redes de alta velocidad"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">developer_board</span> Cable Fibra Óptica</h3>
+        <p class="product-description">Cable de fibra óptica multimodo para transmisión de datos a larga distancia con alta velocidad.</p>
+        <button class="btn-buy" aria-label="Comprar Cable Fibra Óptica">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="Adaptador USB a Ethernet Gigabit">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4d627d2e-f812-41db-8225-14dbc3d47a69.png"
+        alt="Adaptador USB a Ethernet Gigabit compacto y portátil"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">usb</span> Adaptador USB Ethernet</h3>
+        <p class="product-description">Perfecto para dispositivos sin puerto Ethernet, ofrece conexión rápida y estable mediante USB 3.0.</p>
+        <button class="btn-buy" aria-label="Comprar Adaptador USB Ethernet">Comprar</button>
+      </div>
+    </article>
+
+    <article class="product-card" tabindex="0" aria-label="UPS para protección de red">
+      <img
+        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d6c53f9-49b5-4fc1-995d-0653b1d2f363.png"
+        alt="UPS para red con respaldo energético y protección contra cortes"
+        class="product-image"
+      />
+      <div class="product-content">
+        <h3 class="product-name"><span class="material-icons" aria-hidden="true">power</span> UPS para Red</h3>
+        <p class="product-description">Sistema de respaldo energético para mantener operativos los dispositivos de red durante cortes de energía.</p>
+        <button class="btn-buy" aria-label="Comprar UPS para Red">Comprar</button>
+      </div>
+    </article>
+    </div>
+     </section>
+     <section id="electronica" class="hidden">
+        <h2 class="section-title">ELECTRÓNICA</h2>
     <div class="products-grid">
       <article class="product-card" tabindex="0">
-        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Laptop moderna" />
-        <h3 class="product-name">Laptop Gamer XYZ</h3>
-        <div class="product-price">$799 USD</div>
-        <button class="btn-buy" aria-label="Comprar Laptop Gamer XYZ">Comprar</button>
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada66fc85ff3e6de.jpg" alt="Camara Go Pro" />
+        <h3 class="product-name">Camara Hero</h3>
+        <p class="product-description">Camara de accion gopro hero 13 black chdhx-131-rw </p>
+        <div class="product-price">$464.95</div>
+        <button class="btn-buy" aria-label="Comprar Camara Hero 13 Max ">Comprar</button>
       </article>
       <article class="product-card" tabindex="0">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazuT4TcyVq1N5hjM5uLLXr14hh-D2ScaZVA&s" alt="Ratón para gaming" />
-        <h3 class="product-name">Mouse Gamer RGB</h3>
-        <div class="product-price">$50 USD</div>
-        <button class="btn-buy" aria-label="Comprar Mouse Gamer RGB">Comprar</button>
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada66326c32769d6.jpg" alt="Selfie Stick" />
+        <h3 class="product-name">Selfie Stick</h3>
+        <p class="product-description">Selfie stick insta360 extended edition hasta 3mts</p>
+        <div class="product-price">$69.95</div>
+        <button class="btn-buy" aria-label="Comprar Selfie Stick">Comprar</button>
       </article>
       <article class="product-card" tabindex="0">
-        <img src="https://fullh4rd.com.ar/img/productos/8/teclado-gamer-redragon-k669-ziggs-rgb-espaol-1.jpg" alt="Teclado mecánico" />
-        <h3 class="product-name">Teclado Mecánico Retroiluminado</h3>
-        <div class="product-price">$64.99 USD</div>
-        <button class="btn-buy" aria-label="Comprar Teclado Mecánico Retroiluminado">Comprar</button>
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada65427cd1d03e5.jpg" alt="Protector Camara" />
+        <h3 class="product-name">GoPro</h3>
+        <p class="product-description">Protector contra-agua para camara gopro 9-10-11 y 12 hasta 60mts addiv-001</p>
+        <div class="product-price">$59.95</div>
+        <button class="btn-buy" aria-label="Comprar protector contra agua Camara GoPro">Comprar</button>
       </article>
       <article class="product-card" tabindex="0">
-        <img src="https://techfamily.pe/cdn/shop/files/gsc_127259649_4853112_1.jpg?v=1716396772" alt="Audífonos inalámbricos" />
-        <h3 class="product-name">Audífonos Inalámbricos</h3>
-        <div class="product-price">$49.99 USD</div>
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada667c3ac92aea9.jpg" alt="Pantalla Hisense" />
+        <h3 class="product-name">Pantalla Hisense</h3>
+        <p class="product-description">Pantalla smart tv hisense 50a6kv 50p uhd 4k hdr</p>
+        <div class="product-price">$400.00</div>
         <button class="btn-buy" aria-label="Comprar Audífonos Inalámbricos">Comprar</button>
       </article>
-    </div>
-       
-  </section>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6831fd3614d94.jpg" alt="Adaptador de Audio" />
+        <h3 class="product-name">Unbranded</h3>
+        <p class="product-description">Transmisor fm para vehiculo kcb-910 usb x2</p>
+        <div class="product-price">$5.00</div>
+        <button class="btn-buy" aria-label="Comprar Auxiliar de audio">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6692a0950ca3e.jpg" alt="Adaptador de Audio 2" />
+        <h3 class="product-name">Unbranded</h3>
+        <p class="product-description">Adaptador de audio 3.5mm 2 macho a 1 3.5mm hembra xc-003</p>
+        <div class="product-price">$2.50</div>
+        <button class="btn-buy" aria-label="Comprar Auxiliar de audio 2">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada67dc4d1c3170e.jpg" alt="Control Alexa" />
+        <h3 class="product-name">Amazon</h3>
+        <p class="product-description">Amazon fire tv stick hd 1080p hdr con alexa control de voz</p>
+        <div class="product-price">$39.95</div>
+        <button class="btn-buy" aria-label="Comprar Control Alexa">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6656542ec27d8.jpg" alt="Bocina Xiomi" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Bocina smart con reloj xiaomi con pantalla ok google 29433</p>
+        <div class="product-price">$55.99</div>
+        <button class="btn-buy" aria-label="Comprar Bocina Xiomi">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada650338558cd39.jpg" alt="Bascula" />
+        <h3 class="product-name">Maxell</h3>
+        <p class="product-description">Bascula digital maxell dfs-1 peso maximo 300lbs</p>
+        <div class="product-price">$40.00</div>
+        <button class="btn-buy" aria-label="Comprar Bascula">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/MC2PnMu1ySaZnLG942bv6h43Ta4oyQUVDjLdqJEc.png" alt="Desatornillador inalambrico" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Destornillador inalambrico xiaomi con estuche y 12 puntas 27002 dzn4019tw</p>
+        <div class="product-price">$37.45</div>
+        <button class="btn-buy" aria-label="Comprar Desatornillador">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/xCRkgU26LMQwHaW6POpCIvx6iUrn8k4WHCbJXofn.jpg" alt="Regleta Electrica" />
+        <h3 class="product-name">Nexxt</h3>
+        <p class="product-description">Regleta electrica forza ps-001b 6 outlets</p>
+        <div class="product-price">$40.00</div>
+        <button class="btn-buy" aria-label="Comprar Regleta Electrica">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/pVWQnyVk6kGy55HKB3YNRiTBBrvWJABca0HJrKNG.png" alt="Desatornillador Electrico" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Destornillador electrico xiaomi mi precision screwdriver kit 36013 gris</p>
+        <div class="product-price">$39.99</div>
+        <button class="btn-buy" aria-label="Comprar Desatornillador Electrico">Comprar</button>
+      </article>
       </div>
-    
-    <section class="registration" id="register" aria-label="Registro de clientes">
-    <h2>Registro de Clientes</h2>
-    <form id="clientForm" novalidate>
-      <label for="name">Nombre completo</label>
-      <input type="text" id="name" name="name" placeholder="Guillermo Pérez" required minlength="3" aria-required="true" />
-
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder= "guille@gmail.com" required aria-required="true" />
-
-      <label for="phone">Teléfono</label>
-      <input type="tel" id="phone" name="phone" placeholder="(503) 7746-3144" pattern="^\(?\d{2,4}\)?[-.\s]?\d{3,4}[-.\s]?\d{4}$" aria-describedby="phoneHelp" />
-
-      <small id="phoneHelp" style="color:#6c757d; margin-top:-0.8rem; margin-bottom:1rem; font-size:0.85rem;">Formato: 10 a 12 dígitos, opcional</small>
-
-      <label for="interest">Interés en productos</label>
-      <select id="interest" name="interest" required aria-required="true">
-        <option value="" disabled selected>Selecciona una opción</option>
-        <option value="computadoras">Computadoras</option>
-        <option value="accesorios">Accesorios</option>
-        <option value="componentes">Componentes</option>
-        <option value="gadgets">Gadgets</option>
-      </select>
-
-      <button type="submit">Registrarse</button>
-      <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
-    </form>
-  </section>
+     </section>
+      <section id="movil" class="hidden">
+         <h2 class="section-title">MÓVIL</h2>
+          <div class="products-grid">
+           <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada682e07b2c65f9.jpg" alt="Cubo de carga" />
+        <h3 class="product-name">Belkin</h3>
+        <p class="product-description">Cubo de carga usb tipo C belkin boost-charge 30w</p>
+        <div class="product-price">$17.95</div>
+        <button class="btn-buy" aria-label="Comprar Cubo de Carga">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada681b93489dd83.jpg" alt="Audifonos Apple" />
+        <h3 class="product-name">Apple</h3>
+        <p class="product-description">Auriculares earpods apple 3.5mm</p>
+        <div class="product-price">$20.99</div>
+        <button class="btn-buy" aria-label="Comprar Audifonos Apple">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/cbbK3ZQxWDDsUdZ5XLaDNgwDlxPoKmfdL26Tqnox.png" alt="Soporte Telefono" />
+        <h3 class="product-name">KlipXtreme</h3>
+        <p class="product-description">Soporte para telefono y tablet para vehiculo klip xtreme kmh-500 brazo expandible</p>
+        <div class="product-price">$14.95</div>
+        <button class="btn-buy" aria-label="Comprar soporte telefono">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada665651d860dac.jpg" alt="Soporte Carga" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Soporte con carga inalambrica xiaomi 50w uso en vehiculo</p>
+        <div class="product-price">$79.99</div>
+        <button class="btn-buy" aria-label="Comprar Soporte Carga">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada64a5b110c24cc.jpg" alt="Retrovisor Camara" />
+        <h3 class="product-name">Unbranded</h3>
+        <p class="product-description">Mirror dashcam vision frontal y trasera para vehiculo retrovison</p>
+        <div class="product-price">$30.99</div>
+        <button class="btn-buy" aria-label="Comprar Retrovisor Camara">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada672106882b3e2.jpg" alt="Smartwatch" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Smartwatch xiaomi redmi watch 5 lite negro pantalla amoled</p>
+        <div class="product-price">$60.00</div>
+        <button class="btn-buy" aria-label="Comprar Smartwatch">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/V1XwLByJUx9iz1IiybqkGB6D4BkpivKaWSv9NNbM.png" alt="Bocina Portatil" />
+        <h3 class="product-name">Genius</h3>
+        <p class="product-description">Bocina portatil inalambrica genius sp-915bt negro gris 5w</p>
+        <div class="product-price">$15.95</div>
+        <button class="btn-buy" aria-label="Comprar Bocina Portatil">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada677d7220cd663.jpg" alt="Rastradeador vehiculo" />
+        <h3 class="product-name">Unbranded</h3>
+        <p class="product-description">Rastreador de vehÍculos gps-313(4g)</p>
+        <div class="product-price">$35.50</div>
+        <button class="btn-buy" aria-label="Comprar Rastreador vehiculo">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/8RTBgzq2eONFojPE9MOm1Juj4zF1dbkoLtfhDG9u.png" alt="Motorola" />
+        <h3 class="product-name">Motorola</h3>
+        <p class="product-description">Telefono celular motorola g85 5g gris</p>
+        <div class="product-price">$299.00</div>
+        <button class="btn-buy" aria-label="Comprar Motorola">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://apizd.zonadigitalsv.com/storage/productos/7ddYgiiT4NtXOTxn9YpQ42AZhEQQvV3dthpzaWCL.png" alt="Telefono Xiomi" />
+        <h3 class="product-name">Xiomi</h3>
+        <p class="product-description">Telefono celular xiaomi redmi note 14 pro+ 5g</p>
+        <div class="product-price">$450.99</div>
+        <button class="btn-buy" aria-label="Comprar Celular Xiomi">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6830c8d47af5f.jpg" alt="Auriculares JBL" />
+        <h3 class="product-name">JBL</h3>
+        <p class="product-description">Auriculares tws bluetooth jbl live pro2 anc ipx5</p>
+        <div class="product-price">$99.99</div>
+        <button class="btn-buy" aria-label="Comprar Auriculares jbl">Comprar</button>
+      </article>
+      <article class="product-card" tabindex="0">
+        <img src="https://api.zonadigitalsv.com/storage/products/imagen_generada6767015ba708f.jpg" alt="Cargador vehiculo" />
+        <h3 class="product-name">Genius</h3>
+        <p class="product-description">Cargador en vehiculo para telefono genius usb doble hasta 36w negro</p>
+        <div class="product-price">$12.50</div>
+        <button class="btn-buy" aria-label="Comprar cargador vehiculo">Comprar</button>
+      </article>  
+         </div>
+       </section> 
+     <section id="homeoffice" class="hidden">
+         <h2 class="section-title">HOME OFFICE</h2>
+          <div class="products-grid"> 
+         </div>
+       </section> 
+    <section id="smarthome" class="hidden">
+         <h2 class="section-title">SMART HOME</h2>
+          <div class="products-grid"> 
+         </div>
+       </section>
   </main>
 
   <footer>
-    &copy; 2025 Steren El Salvador - Todos los derechos reservados
-  </footer>
-
+    &copy; 2025 MY SHOP El Salvador - Todos los derechos reservados
+  </footer>  
   <script src="js/script.js"></script>
 </body>
 </html>
