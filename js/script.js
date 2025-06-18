@@ -1,4 +1,10 @@
-
+ document.getElementById('btn-menu').addEventListener('click', function() {
+      document.getElementById('nav-container').classList.add('show');
+    });
+    
+    document.getElementById('close-menu').addEventListener('click', function() {
+      document.getElementById('nav-container').classList.remove('show');
+  });
     // Función para cambiar entre secciones
     function showSection(sectionId) {
       // Ocultar todas las secciones
