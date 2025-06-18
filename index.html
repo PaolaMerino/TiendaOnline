@@ -18,8 +18,11 @@
       <input type="search" placeholder="Buscar en toda la tienda..." />
       <span class="icon-menu2" id="btn-buscar"><i class="fa-solid fa-magnifying-glass"></i></span>
     </div>
-   <div class="header-right">
-      <span class="icon-menu1" id="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></span>
+   <div class="header-right">      
+      <div  class="cart-icon" id="cartIcon">
+        <i class="fa-solid fa-cart-shopping"></i>    
+        <span class="cart-count" id="cartCount">0</span>
+        </div> 
       <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
     </div>  
   </header>
@@ -57,31 +60,83 @@
         <section class="products-section" id="products" aria-label="Productos destacados">
           <h2>Productos Destacados</h2>
           <div class="products-grid">
-            <article class="product-card" tabindex="0">
-              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Laptop moderna" />
+            <article class="product-card" tabindex="0" data-id="1" data-name="Laptop Gamer XYZ" data-price="799">
+              <img src="https://m.media-amazon.com/images/I/71tI18691iS._AC_SX679_.jpg" alt="Laptop moderna" />
               <h3 class="product-name">Laptop Gamer XYZ</h3>
-              <div class="product-price">$799 USD</div>
-              <button class="btn-buy" aria-label="Comprar Laptop Gamer XYZ">Comprar</button>
+               <p class="product-description">Laptop para juegos ASUS ROG Strix G15 Advantage Edition, pantalla FHD de 15.6" y 300 Hz</p>
+               <div class="product-price-container">
+                    <div class="product-price">$799 USD</div>
+                    <button class="btn-add-cart" aria-label="Agregar al carrito">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <button class="btn-buy" aria-label="Comprar Laptop Gamer XYZ">Comprar ahora</button>
             </article>
-            <article class="product-card" tabindex="0">
-              <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80" alt="Ratón para gaming" />
+            
+            <article class="product-card" tabindex="0" data-id="2" data-name="Mouse Gamer RGB" data-price="50">
+              <img src="https://media.falabella.com/falabellaPE/123477851_01/w=800,h=800,fit=pad" alt="Ratón para gaming" />
               <h3 class="product-name">Mouse Gamer RGB</h3>
+               <p class="product-description">Mouse Gamer Inalámbrico RGB 7 Botones 8000 DPI Xtrike Me GW-611</p>
+              <div class="product-price-container">
               <div class="product-price">$50 USD</div>
+                  <button class="btn-add-cart" aria-label="Agregar al carrito">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
               <button class="btn-buy" aria-label="Comprar Mouse Gamer RGB">Comprar</button>
             </article>
-            <article class="product-card" tabindex="0">
-              <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=400&q=80" alt="Teclado mecánico" />
+            <article class="product-card" tabindex="0" data-id="3" data-name="Teclado Mecánico Retroiluminado" data-price="64.99" >
+              <img src="https://sutoasv.com/wp-content/uploads/2024/07/TECLADO-G27-NEGRO-SUTOA-EL-SALVADOR.webp" alt="Teclado mecánico" />
               <h3 class="product-name">Teclado Mecánico Retroiluminado</h3>
+              <p class="product-description">Teclado Mecánico Retroiluminado con Cable G27 ONIKUMA</p>
+               <div class="product-price-container">
               <div class="product-price">$64.99 USD</div>
+                 <button class="btn-add-cart" aria-label="Agregar al carrito">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
               <button class="btn-buy" aria-label="Comprar Teclado Mecánico Retroiluminado">Comprar</button>
             </article>
-            <article class="product-card" tabindex="0">
-              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Audífonos inalámbricos" />
+            <article class="product-card" tabindex="0" data-id="4" data-name="Audífonos Inalámbricos" data-price="49.99">
+              <img src="https://panamericana.vtexassets.com/arquivos/ids/493040-800-auto?v=638187164966730000&width=800&height=auto&aspect=true" alt="Audífonos inalámbricos" />
               <h3 class="product-name">Audífonos Inalámbricos</h3>
+               <p class="product-description">Audífonos Inalámbricos de diadema SONY WH-CH520 Azules</p>
+              <div class="product-price-container">
               <div class="product-price">$49.99 USD</div>
+                 <button class="btn-add-cart" aria-label="Agregar al carrito">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
               <button class="btn-buy" aria-label="Comprar Audífonos Inalámbricos">Comprar</button>
             </article>
           </div>
+          
+           <div class="cart-container" id="cartContainer">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart" id="closeCart">
+            <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0 USD</span>
+            </div>
+            <button class="btn-checkout">Proceder al pago</button>
+        </div>
+    </div>
+            <!-- Notificación -->
+    <div class="notification" id="notification">
+        Producto agregado al carrito!
+    </div>
         </section>
       </div>
       
