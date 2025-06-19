@@ -32,7 +32,7 @@
     <nav class="main-nav">
       <a class="nav-link active" data-target="home"><p><i class="fa-solid fa-house"></i> HOME</p></a>
       <a class="nav-link" data-target="categories"><p><i class="bi bi-menu-app-fill"></i> CATEGORIAS</p></a>
-      <a href="#"><p><i class="bi bi-person-plus-fill"></i>CLIENTES</p></a>
+     <a  class="nav-link" data-target="register"><p><i class="bi bi-person-plus-fill"></i>CLIENTES</p></a>
       <a href="#"><p><i class="bi bi-telephone-fill"></i>CONTACTOS</p></a>
     </nav>
   </div>
@@ -141,32 +141,62 @@
       </div>
       
       <section class="registration" id="register" aria-label="Registro de clientes">
-        <h2>Registro de Clientes</h2>
-        <form id="clientForm" novalidate>
-          <label for="name">Nombre completo</label>
-          <input type="text" id="name" name="name" placeholder="Guillermo Pérez" required minlength="3" aria-required="true" />
-
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" placeholder= "guille@gmail.com" required aria-required="true" />
-
-          <label for="phone">Teléfono</label>
-          <input type="tel" id="phone" name="phone" placeholder="(503) 7746-3144" pattern="^\(?\d{2,4}\)?[-.\s]?\d{3,4}[-.\s]?\d{4}$" aria-describedby="phoneHelp" />
-
-          <small id="phoneHelp" style="color:#6c757d; margin-top:-0.8rem; margin-bottom:1rem; font-size:0.85rem;">Formato: 10 a 12 dígitos, opcional</small>
-
-          <label for="interest">Interés en productos</label>
-          <select id="interest" name="interest" required aria-required="true">
-            <option value="" disabled selected>Selecciona una opción</option>
-            <option value="computadoras">Computadoras</option>
-            <option value="accesorios">Accesorios</option>
-            <option value="componentes">Componentes</option>
-            <option value="gadgets">Gadgets</option>
-          </select>
-
-          <button type="submit">Registrarse</button>
-          <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
-        </form>
+        <div class="header">
+            <h1>Crear cuenta</h1>
+            <p class="login-link">¿Ya eres cliente? <a href="#">Iniciar sesión</a></p>
+        </div>
+        
+        <div class="form-container">
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="email">Ingresa un número de celular o correo electrónico</label>
+                    <input type="text" id="email" class="form-control" placeholder="mc0427022020@unab.edu.sv" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Tu nombre</label>
+                    <input type="text" id="name" class="form-control" placeholder="Nombres y apellidos" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Contraseña (al menos 6 caracteres)</label>
+                    <input type="password" id="password" class="form-control" placeholder="Crea una contraseña segura" minlength="6" required>
+                    <p class="password-info">La contraseña debe contener al menos seis caracteres.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Vuelve a escribir la contraseña</label>
+                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirma tu contraseña" minlength="6" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Registrar cuenta</button>
+                
+                <div id="formMessage" class="form-message"></div>
+            </form>
+            
+            <div class="divider"></div>
+            
+            <div class="alt-login">
+                <p>O registrarse con</p>
+                <div class="social-buttons">
+                    <div class="social-btn fb">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-btn google">
+                        <i class="bi bi-google"></i>
+                    </div>
+                    <div class="social-btn apple">
+                        <i class="bi bi-apple"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Al hacer clic en "Crear cuenta", aceptas nuestras <a href="#">Condiciones</a>, la <a href="#">Política de privacidad</a> y la <a href="#">Política de cookies</a>.</p>
+        </div>
       </section>
+        
     </section>
     
     <!-- Sección de categorías -->
