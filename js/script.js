@@ -218,4 +218,28 @@
         
         // Inicializar carrito
         updateCartUI();
- 
+
+ // Función para desplazamiento al formulario de clientes
+function scrollToForm() {
+    // Obtener el elemento del formulario por su ID
+    const formSection = document.getElementById('register');
+    
+    if (formSection) {
+        // Calcular la posición con un desplazamiento adicional
+        const headerOffset = 80; // Altura del encabezado
+        const elementPosition = formSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+        // Desplazamiento suave
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Asignar evento al enlace de CLIENTES
+document.querySelector('.nav-link[href="#register"]').addEventListener('click', function(e) {
+    e.preventDefault(); // Previene el comportamiento por defecto del enlace
+    scrollToForm(); // Llama a nuestra función de desplazamiento
+});
