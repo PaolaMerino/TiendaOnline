@@ -832,13 +832,11 @@ header {
     
     /* Estilos para la sección de categorías */
     .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.5rem;
-      margin: 2rem auto;
-      max-width: 1000px;
-      padding: 1rem;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
     
     .category-card {
       background: #CAF0F8;
@@ -937,4 +935,6 @@ header {
       .container-prod {
         padding: 0.5rem;
       }
+
+      
     }
